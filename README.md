@@ -1,1 +1,1 @@
-# Openbox Settings
+# Openbox Skeleton Files
