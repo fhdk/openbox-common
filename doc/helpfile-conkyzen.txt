@@ -15,11 +15,11 @@ the running conkys, or just the default conky. Multiple conkys can be opened
 for editing at the same time.
 
 
-al-conkyzen
+manjaro-conkyzen
 ===========
 The main script
 
-USAGE:  al-conkyzen [OPTION]...FILES
+USAGE:  manjaro-conkyzen [OPTION]...FILES
 
     With no command option the script runs the gui
 
@@ -35,19 +35,19 @@ USAGE:  al-conkyzen [OPTION]...FILES
 EXAMPLES:
     Save session to a new saved-session file with:
 
-        al-conkyzen -f sessionfile-name
+        manjaro-conkyzen -f sessionfile-name
 
     To start the default conky session at login, add the
     following line to autostart:
 
-        (sleep 2s && al-conky-session --autostart) &
+        (sleep 2s && manjaro-conky-session --autostart) &
 
 
-al-conky-session
+manjaro-conky-session
 ================
 Script to handle the sessionfiles
 
-USAGE:  al-conky-session [OPTION(S)]...FILES
+USAGE:  manjaro-conky-session [OPTION(S)]...FILES
 
     With no command argument, the script uses the default
     "$CONKYPATH/conky-session" sessionfile
@@ -59,16 +59,16 @@ OPTIONS:
 
 EXAMPLES:
     Run specified sessionfile at login:
-    "al-conky-session --autostart /path/to/sessionfile"
+    "manjaro-conky-session --autostart /path/to/sessionfile"
 
     Run default sessionfile, without killing running conkys:
-    "al-conky-session --autostart"
+    "manjaro-conky-session --autostart"
 
     Run several conky sessionfiles (option to kill conkys first):
-    "al-conky-session --default sessionfile1 sessionfile2 etc"
+    "manjaro-conky-session --default sessionfile1 sessionfile2 etc"
 
 
-al-conkyedit
+manjaro-conkyedit
 ============
 Script to display a listbox with all the conkys available for editing.
 Chosen conky config files will open in the default text editor.
